@@ -39,6 +39,8 @@ def vistaAgregarProducto():
 
 @app.route("/agregarProductos", methods=["POST"])            # Definir la ruta para procesar el formulario de agregar productos (método POST)
 def agregarProducto():
+
+   
     
     mensaje = None
     estado = False
