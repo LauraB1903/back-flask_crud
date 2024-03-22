@@ -40,8 +40,6 @@ def vistaAgregarProducto():
 @app.route("/agregarProductos", methods=["POST"])            # Definir la ruta para procesar el formulario de agregar productos (método POST)
 def agregarProducto():
 
-   
-    
     mensaje = None
     estado = False
     if("correo"in session):
@@ -51,7 +49,6 @@ def agregarProducto():
             precio = int(request.form["precio"])
             idCategoria = request.form["categoria"]
             foto =request.files["imagen"]
-
 
 # Crear un diccionario con los datos del producto
             producto ={
